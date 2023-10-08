@@ -1,6 +1,6 @@
 #define seg7_a 2
 
-int seg7_digit[8]={B11111010, B00111110, B11110110, B11011110, B01111010, B10011100, B11110110, B10001110};
+int seg7_digit[8]={B10000000, B01000000, B00000010 , B00001000, B00010000, B00100000, B00000010, B00000100 };
 int digits[4]={10,11,12,13};
 void setup() {
   // put your setup code here, to run once:
@@ -13,7 +13,7 @@ void setup() {
      pinMode(digits[i], OUTPUT);
     digitalWrite(digits[i], HIGH);
   }
-  digitalWrite(digits[0], LOW);
+  digitalWrite(digits[3], LOW);
 }
 void show(int val){
   int mask0 = B10000000;
@@ -28,7 +28,7 @@ void loop() {
   // put your main code here, to run repeatedly:
  for(int i=0; i<8; i++){
    show(seg7_digit[i]);
-   delay(1000);
+   delay(100);
  }
 }
 
