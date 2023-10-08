@@ -1,3 +1,5 @@
+# 七段顯示器 單顆顯示數字1到9
+
 ```arduino
 #define seg7_a 2
 
