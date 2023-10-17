@@ -39,28 +39,28 @@ void loop() {
       show(seg7_digit[d]);
       digitalWrite(seg7_a+7,HIGH);
       digitalWrite(10,LOW);
-      delay(1);
+      delay(5);
       digitalWrite(10,HIGH);
       // 百位數
       x %= 1000;
       d = x /100;
       show(seg7_digit[d]);
       digitalWrite(11,LOW);
-      delay(1);
+      delay(5);
       digitalWrite(11,HIGH);
       // 十位數
       x %= 100;
       d = x / 10;
       show(seg7_digit[d]);
       digitalWrite(12,LOW);
-      delay(1);
+      delay(5);
       digitalWrite(12,HIGH);
       // 個位數
       x %= 10;
       d = x / 1;
       show(seg7_digit[d]);
       digitalWrite(13,LOW);
-      delay(1);
+      delay(5);
       digitalWrite(13,HIGH);      
    }
   }
