@@ -21,8 +21,9 @@ void setup() {
 }
 
 void loop() {
-  if(digitalRead(Button)==LOW)  //讀取Button接腳的電位是否為LOW
-    { num=++num%3; flag=1; }    //若是，就代表按下開關，num+1後取3的餘數
+  //if(digitalRead(Button)==LOW)  //讀取Button接腳的電位是否為LOW
+  //  { num=++num%3; flag=1; }    //若是，就代表按下開關，num+1後取3的餘數
+  flag = 1; num = 0;
   if(flag==1) { play(num); flag=0; } 
 }
 
